@@ -1,0 +1,11 @@
+main>section{
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
