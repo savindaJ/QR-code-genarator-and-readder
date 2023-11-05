@@ -20,14 +20,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Generate</a>
-                    <a class="nav-link" href="#">Reade</a>
+                    <a id="genarate" class="nav-link active" aria-current="page" href="#">Generate</a>
+                    <a id="readerNav" class="nav-link" href="#">Reade</a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
-<main style="display: none">
+<main style="display: none" id="generator">
     <section class="shadow-lg rounded-4">
         <div class="input-group mb-3 mt-2 w-75 m-auto">
             <span class="input-group-text" id="basic-addon1">@</span>
@@ -42,7 +42,7 @@
 
 </main>
 
-<main>
+<main id="reader" style="display: none">
 
     <div class="wrapper">
         <form action="#">
