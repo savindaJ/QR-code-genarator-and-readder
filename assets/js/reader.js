@@ -1,9 +1,9 @@
-const wrapper = $(".wrapper"),
-    form = $("form"),
-    fileInp = $("input"),
-    infoText = $("p"),
-    closeBtn = $(".close"),
-    copyBtn = $(".copy");
+const wrapper = document.querySelector(".wrapper"),
+    form = document.querySelector("form"),
+    fileInp = form.querySelector("input"),
+    infoText = form.querySelector("p"),
+    closeBtn = document.querySelector(".close"),
+    copyBtn = document.querySelector(".copy");
 
 function fetchRequest(file, formData) {
     infoText.innerText = "Scanning QR Code...";
@@ -31,7 +31,9 @@ fileInp.addEventListener("change", async e => {
 
 copyBtn.addEventListener("click", () => {
     let text = document.querySelector("textarea").textContent;
-    navigator.clipboard.writeText(text);
+    // navigator.clipboard.writeText(text);
+    // window.location.href = text;
+    window.open(text, '_blank');
 });
 
 form.addEventListener("click", () => fileInp.click());
