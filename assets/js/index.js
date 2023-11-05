@@ -21,7 +21,6 @@ $('#genarate').on('click',function (){
     });
 });
 
-var qrcode = new QRCode($('#qrcode'), {
-    width : 300,
-    height : 300
+$('#btnGenarate').on('click',function (){
+    makeCode();
 });
