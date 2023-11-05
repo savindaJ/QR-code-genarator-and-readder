@@ -3,3 +3,7 @@ $('#readerNav').on('click',function (){
     $('#generator').css('display','none');
 });
 
+$('#genarate').on('click',function (){
+    $('#reader').css('display','none');
+    $('#generator').css('display','block');
+});
