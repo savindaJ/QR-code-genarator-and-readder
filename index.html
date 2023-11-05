@@ -78,9 +78,13 @@
 
         if (!elText.value) {
             alert("Input a text");
+            qrcode.clear();
             elText.focus();
         }else {
-            qrcode.makeCode(elText.value);
+            setTimeout(function (){
+                qrcode.makeCode(elText.value);
+            },1000);
+
         }
     }
 </script>
