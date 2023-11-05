@@ -20,3 +20,8 @@ main>section{
 body{
     background: #b8e9f3;
 }
+
+main>section p{
+    width: max-content;
+    height: auto;
+}
