@@ -20,3 +20,8 @@ $('#genarate').on('click',function (){
         color:'blue'
     });
 });
+
+var qrcode = new QRCode($('#qrcode'), {
+    width : 300,
+    height : 300
+});
